@@ -10,8 +10,8 @@ $(EXE): src/main.cpp
 run: $(EXE)
 	./$<
 
-memoria: bin/memoria
+archivo: bin/archivo
 	./$<
 
-bin/memoria: src/memoria.cpp
+bin/archivo: src/archivo.cpp
 	$(CXX) $< -o $@ -std=c++17
